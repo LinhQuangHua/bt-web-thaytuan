@@ -2,58 +2,53 @@ body {
   background: orange;
   margin: 0;
   padding: 15px;
-  
 }
-H5 {color: #ffffff}
+h5 {
+  color: #ffffff;
+}
 
-.container
-{
+.container {
   justify-content: center;
   display: flex;
 }
-.container .thumbnail
-{
-  
+.container .thumbnail {
   height: 200px;
   width: 50%;
-  
 }
-.container .thumbnail img
-{
+.container .thumbnail img {
   border: 1px solid black;
   border-radius: 10px;
   height: 100%;
   width: 100%;
 }
 
-#like{
+#like {
   position: absolute;
-  top: calc(50% - 50px)
+  top: calc(50% - 50px);
 }
-button 
-{
+.toggle {
   width: 80px;
   height: 30px;
-  background-color: #1877F2;
+  background-color: #1877f2;
   border-radius: 5px;
   font-family: Arial, Helvetica, sans-serif;
   color: white;
   text-align: center;
   position: absolute;
-  top: calc(50% - 5px)
+  top: calc(50% - 5px);
 }
 
-button:hover{
-  color: blue;
+.toggle:hover {
+  color: red;
 }
 
 .toggle::before {
-  content: '\f164';
+  content: "\f004";
   font-family: fontAwesome;
 }
 
 .toggle.active::before {
-  content: '\f164';
+  content: "\f164";
   font-family: fontAwesome;
   color: blue;
 }

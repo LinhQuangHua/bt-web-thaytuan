@@ -13,20 +13,18 @@
         <img src="https://s.luyengame.net/games/pikachu/image.jpg" />
       </div>
       <h5 id="like">45</h5>
-       <button class=".toggle" onClick= myFunction()>  Like</button>
+      <button class="toggle" onclick=myfunction()>  Like</button>
     </div>
-
-    
-  </body>
-
-  <script>
-    function myFunction()
+    <script>
+    function myfunction()
     {
-      document.querySelector('.toggle').onClick;
-      this.classList.toggle('active');
+       document.getElementById("like").innerHTML = '46';
+       document.querySelector('.toggle').onClick = function(){
+        this.classList.toggle('active');
+      
+      }
     }
-
-  
-</script>
-
+  </script>
+    
+</body>
 </html>
